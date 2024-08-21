@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter basename="/memory_game_reactjs">
+      <BrowserRouter basename="/memorygame_2">
         <Routes>
           <Route path="/"  element={<MainPage setNumCards={setNumCards}/>}></Route>
           <Route path="/game"  element={<GameBoard numCards={numCards}/>}></Route>
