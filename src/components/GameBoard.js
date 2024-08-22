@@ -38,7 +38,7 @@ function GameBoard({ numCards }) {
     const playerName = prompt("You win! Enter your name:");
     if (playerName) {
       try {
-        await axios.post(`${process.env.REACT_APP_API_URL}/setScore`, { 
+        await axios.post('https://memorygame-liard.vercel.app/api/v1/trainees/setScore', { 
           name: playerName, 
           score: time,
           cards: numCards // Include the number of cards in the data
