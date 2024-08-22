@@ -19,7 +19,7 @@ function MainPage({ setNumCards }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`${process.env.REACT_APP_API_URL}/getScore`);
+        const response = await axios.get('https://memorygame-liard.vercel.app/api/v1/trainees/getScore');
         const [data] = response.data;
         const { _id, ...cards } = data;
     
